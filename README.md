@@ -134,3 +134,35 @@ Para ilustrar mejor el análisis, adjunto dos gráficos. Demostrando que el On²
 (Pues depende unicamente de la cantidad de elementos en el array).
 
 
+------------------------------------Experimentos y resultados del FREETEXT
+
+RESULTADOS DEL EXPERIMENTO: VAMOS A COMPARAR LA TASA DE CRECIMIENTO DE LOS TIEMPOS CON 0(n) 
+*Los tiempos están dados en mili segundos y son aproximados.
+Se utilizan archivos con diferentes pesos, para hacer la comparativa y experimentos.
+
+Tamaño 	  Tiempos 	   O(n) "L"
+ 1MB 	      30,9591		    1
+ 3MB 	      83,7706         3
+ 5MB		   138,372         5
+ 7MB 	      200,569         7
+ 10MB 	   242,709         10
+
+Tasa crecimiento 		Tn/Tn+1 Tasa de crecimiento O(n)
+T1/T2 0,36   					L1/L2 0,33
+T2/T3 0,60   					L2/L3 0,60
+T3/T4 0,68   					L3/L4 0,71
+T4/T5 0,82   					L4/L5 0,70 
+
+Con estas comparaciones entre tasas de crecimiento, podemos notar que la función es lineal tiene O(n).
+La primera tiene una diferencia de 3.
+La segunda ninguna diferencia
+La tercera de tres 
+La ultima una diferencia de 12, en este caso la diferencia entre ambas tasas es más alta pero esto se
+puede deber a varios factores que no se pueden controlar, pero 3 de 4 cumplen un tiempo aproximado muy
+similar entre si.
+
+Se concluye entonces que el algoritmo implementado es lineal, cumple un O(n).
+
+
+
+
