@@ -1,6 +1,6 @@
 # Caso-2
 
-                                          Experimentos y resultados del QUICKSORT
+------------------------------------------------Experimentos y resultados del QUICKSORT
 
 
 P R U E B A S P A R A NLOG(N)
@@ -30,9 +30,9 @@ quicksort(a5,0,40); //2,36291
 Nos damos cuenta que el aumento del tiempo es gradual conforme la cantidad de elementos aumenta
 
 T1 = 0,11908 	L1 = 10log(10) = 33,21
-T2 = 0,28 	L2 = 15log(15) = 58,60
-T3 = 0,42 	L3 = 20log(20) = 86,44
-T4 = 0,80 	L4 = 30log(30) = 147,20
+T2 = 0,28 	  L2 = 15log(15) = 58,60
+T3 = 0,42 	  L3 = 20log(20) = 86,44
+T4 = 0,80 	  L4 = 30log(30) = 147,20
 T5 = 2,36291 	L5 = 40log(40) = 212,87
 
 Calculamos la tasa de crecimiento y nos damos cuenta que la diferencia es muy poca comparándolas entre si. 
@@ -99,7 +99,7 @@ Con pivote aleatorio y los mismo arreglos anteriores, los tiempos aproximados so
 Tabla comparativa de tasa de crecimiento calculada Tiempo1/ Tiempo2:
 
 Tasa del P.fijo    Tasa del P.aleatorio    Tasa de crecimiento nlogn
-   0,82192 			0,5443 					0,56
+   0,82192 			         0,5443 					            0,56
    0,4124                0,57964                      0,67
    0,79                  0,88869                      0,59
    0,38                  0,67953                      0,69
@@ -108,4 +108,29 @@ En conclusión, considero que el pivote aleatorio logra un mejor desempeño en l
 crea facilmente un nlog(n). 
 
 
-                                Experimentos y resultados del INSERTIONSORT
+------------------------------------Experimentos y resultados del INSERTIONSORT
+
+Tabla comparativa de tiempos en mili segundos:
+
+Peor tiempo: (Usando arreglos con nùmeros ordenados de manera descendente) para que me haga un On²
+Mejor tiempo: (Usando arreglos con números ordenados de manera ascendente) para que me haga un On
+**Se utiliza la misma cantidad de números para las pruebas, arreglos de: 10, 20, 30, 40, 50.
+
+  Peor(On²)   Mejor(On)  Cantidad 
+  0,000711     0,000253    10
+  0,001153     0,000311    20
+  0,002094     0,000335    30
+  0,003466     0,000371    40
+  0,006332     0,000391    50
+
+Opiniones:
+1: El peor caso muestra un crecimiento enorme en comparación con el mejor caso. Teniendo la misma cantidad de elementos.
+
+2: El crecimiento del "mejor caso" es muy poco entre todas las pruebas, pero igualmente se puede notar que crece de manera progresiva sin dar un golpe brusco en el aumento del tiempo entre el primero y el último.
+
+3: El peor caso se puede notar un crecimiento abrupto entre la primera prueba y la última. Todas las pruebas se les nota un crecimiento bastante notorio entre la anterior.
+
+Para ilustrar mejor el análisis, adjunto dos gráficos. Demostrando que el On² tiene una curva muy similar a las funciones cuadráticas y el On demuestra un aumento progresivo como las funciones lineales
+(Pues depende unicamente de la cantidad de elementos en el array).
+
+
