@@ -3,6 +3,8 @@
 ------------------------------------------------Experimentos y resultados del QUICKSORT
 
 
+
+
 P R U E B A S P A R A NLOG(N)
 
 1- Se hacen con un pivote central, parte a la mitad el array para sacar el pivote.
@@ -108,7 +110,12 @@ En conclusión, considero que el pivote aleatorio logra un mejor desempeño en l
 crea facilmente un nlog(n). 
 
 
+
+
 ------------------------------------Experimentos y resultados del INSERTIONSORT
+
+
+
 
 Tabla comparativa de tiempos en mili segundos:
 
@@ -134,7 +141,11 @@ Para ilustrar mejor el análisis, adjunto dos gráficos. Demostrando que el On²
 (Pues depende unicamente de la cantidad de elementos en el array).
 
 
+
 ------------------------------------Experimentos y resultados del FREETEXT
+
+
+
 
 RESULTADOS DEL EXPERIMENTO: VAMOS A COMPARAR LA TASA DE CRECIMIENTO DE LOS TIEMPOS CON 0(n) 
 *Los tiempos están dados en mili segundos y son aproximados.
